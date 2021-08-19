@@ -1,21 +1,9 @@
+{% extends "base.html" %}
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="container mt-2">
+{% block content %}
         <h1>Passagem</h1>
         <p>Sua origem é: {{ form.origem.value }}</p>
         <p>Seu destino é: {{ form.destino.value }}</p>
         <p>Data de ida: {{ form.data_ida.value }}</p>
         <p>Data de volta: {{ form.data_volta.value }}</p>
-    </section>
-    
-</body>
-</html>
+{% endblock %}
